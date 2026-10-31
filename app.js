@@ -68,29 +68,6 @@ function renderTransitions() {
 $('#search').addEventListener('input', renderTransitions);
 renderTransitions();
 
-// SFX previews.
-const sounds = ['Whoosh rápido', 'Whoosh suave', 'Whoosh pesado', 'Riser', 'Impacto', 'Sub drop', 'Pop', 'Clique',
-  'Glitch', 'Ding', 'Notificação', 'Obturador', 'Brilho', 'Digitação'];
-let audio = null, playing = null;
-sounds.forEach((label, index) => {
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'sfx';
-  button.innerHTML = '<i aria-hidden="true">▶</i><span></span>';
-  button.querySelector('span').textContent = label;
-  button.setAttribute('aria-label', 'Ouvir ' + label);
-  button.addEventListener('click', () => {
-    if (audio) { audio.pause(); playing?.classList.remove('playing'); }
-    if (playing === button) { playing = null; return; }
-    audio = new Audio(`assets/sfx/${String(index + 1).padStart(2, '0')}.mp3`);
-    playing = button;
-    button.classList.add('playing');
-    audio.addEventListener('ended', () => { button.classList.remove('playing'); if (playing === button) playing = null; });
-    audio.play().catch(() => button.classList.remove('playing'));
-  });
-  $('#sfx').append(button);
-});
-
 // Animated numbers in the utility demos.
 function loopNumber(element, duration, format) {
   if (!element) return;
