@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#121a28"/><stop offset="1" stop-color="#0a0e16"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#22d3ee" stop-opacity=".16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cf0ff"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+<linearGradient id="v" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9b8ff"/><stop offset="1" stop-color="#7c4dff"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbe4ef"/></linearGradient>
+<linearGradient id="scene" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e2b45"/><stop offset="1" stop-color="#2c2350"/></linearGradient>
+</defs><rect width="640" height="360" fill="url(#bg)"/><ellipse cx="320" cy="180" rx="300" ry="170" fill="url(#glow)"/><rect x="150" y="70" width="340" height="220" rx="22" fill="url(#scene)" stroke="#3a4a66" stroke-width="6"/>
+<rect x="250" y="132" width="140" height="96" rx="14" fill="none" stroke="url(#c)" stroke-width="12"/>
+<g stroke="url(#v)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M236 118 L190 94 M190 94 h28 M190 94 v26"/><path d="M404 118 L450 94 M450 94 h-28 M450 94 v26"/>
+<path d="M236 242 L190 266 M190 266 h28 M190 266 v-26"/><path d="M404 242 L450 266 M450 266 h-28 M450 266 v-26"/></g></svg>
