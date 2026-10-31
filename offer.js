@@ -7,5 +7,6 @@ window.STUDIO_OFFER = {
   "refundDays": 7,
   "version": "1.0.0",
   "testedResolveVersions": [],
-  "releaseApproved": false
+  "releaseApproved": false,
+  "memesSize": "500 GB"
 };

@@ -98,6 +98,7 @@ const hasPrice = typeof offer.priceBRL === 'number' && offer.priceBRL > 0;
 const ready = offer.releaseApproved && checkoutUrl && hasPrice && offer.sellerName && offer.supportEmail;
 const price = hasPrice ? new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(offer.priceBRL) : '';
 $$('[data-refund]').forEach(el => { el.textContent = offer.refundDays || 7; });
+if (offer.memesSize) $$('[data-memes-size]').forEach(el => { el.textContent = offer.memesSize; });
 if (offer.version) $$('[data-version]').forEach(el => { el.textContent = offer.version; });
 if (hasPrice) {
   $('#price').textContent = price;
